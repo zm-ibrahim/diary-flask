@@ -14,8 +14,6 @@ DB_NAME =  os.environ.get("DB_NAME")
 client = MongoClient(MONGODB_URI)
 db = client[DB_NAME]
 
-# client = MongoClient('mongodb+srv://test:sparta@cluster0.zo4xdve.mongodb.net/?retryWrites=true&w=majority')
-# db = client.Cluster0
 app = Flask(__name__)
 
 @app.route('/')
